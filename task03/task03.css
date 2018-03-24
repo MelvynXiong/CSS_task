@@ -1,0 +1,24 @@
+body{
+    background-color: #68cdd5;
+}
+.mainLog{
+    width: 70%;
+    margin: 3rem auto 7rem auto;
+    text-align: center;
+}
+.intro{
+    width: 70%;
+    margin: 7rem auto;
+    color: white;
+    text-align: center;
+}
+.container{
+    width: 70%;
+    margin:6rem auto;
+}
+.container .left{
+    float:left;
+}
+.container .right{
+    float:right;
+}
