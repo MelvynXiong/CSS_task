@@ -1,0 +1,61 @@
+html{
+    background-color: #eff0f4; /*调整背景颜色*/
+    font-size: 62.5%; /*调整字体大小 1rem = 10 px */
+}
+header{
+    background-color: #5fc0cd;
+    height: 5rem;
+    position: relative; /* 给header定位，子元素根据已定位的最近祖先元素定位*/
+    margin-bottom: 2rem;
+    text-align: center;
+}
+header>button{
+    background-color: #5fc0cd;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.6rem;
+    color:white;
+    border: none;
+    outline: none;
+}
+#sign{
+    margin-top: 1.4rem;
+}
+#register{
+    position: absolute;
+    top: 1.4rem;
+    left: 1rem;
+}
+#close{
+    position: absolute;
+    top: 1.4rem;
+    right: 1rem;
+}
+input[type="submit"]{
+    display: block;
+    height:5rem;
+    width: 100%;
+    color:white;
+    font-size: 1.6rem;
+    background-color: #5fc0cd;
+    outline: none;
+}
+a{
+    color: #5fc0cd;
+    float:right;
+    margin:1rem;
+}
+.tag{
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.tag>input{
+    width: calc(100% - 5.6rem);
+    margin-left: 1.5rem;
+    padding: 0rem;
+    border: 0rem;
+    font-size: 1.6rem;
+    position: relative;
+    bottom: 1.4rem;
+    outline: none;
+}
