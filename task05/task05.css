@@ -1,0 +1,114 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    background-color: #5fc0cd;
+
+}
+header > #back{
+    position: absolute;
+    left: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color: #ffffff;
+    background-color: #5fc0cd;
+}
+header > #title{
+    border: none;
+    font-size: 1.6rem;
+    outline: none;
+    color: #ffffff;
+    background-color: #5fc0cd;
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 1rem;
+}
+footer > #message{
+    border: 1px solid #5fc0cd;
+    border-radius: 0.5rem;
+    width: 47%;
+    margin-left: 2%;
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    color: #5fc0cd;
+    background-color: #ffffff;
+    outline: none;
+
+}
+footer > #call{
+    border-radius: 0.5rem;
+    border: 0;
+    width: 47%;
+    margin-left: 2%;
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    background-color: #5fc0cd;
+    color: #fff;
+    outline: none;
+}
+main{
+    padding-top: 5.3rem;
+}
+.star{
+    vertical-align: middle;
+}
+.tag{
+    float: left;
+    padding-right: 2rem;
+    color: #999999;
+}
+.right{
+    overflow: hidden;
+    padding-left: 2rem;
+    border-left: 1px solid #999999;
+}
+.info{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #999999;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    padding-left: 2rem;
+}
+.skills > span{
+    padding-left: 1rem;
+    border-left: 3px solid #999999;
+}
+.skills{
+    margin: 0;
+}
+#price{
+    color: #e26163;
+}
+.page > div{
+    display: inline-block;
+    position: relative;
+    top: 2rem;
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+.page{
+    background-image: url("images/task05_04.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 3.5rem 0;
+}
+#women{
+    vertical-align: middle;
+    padding: 0 2rem;
+}
