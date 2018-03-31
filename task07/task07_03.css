@@ -1,0 +1,85 @@
+html {
+    font-size: 62.5%;
+    font-family: Hiragino Sans GB;
+}
+body {
+    background-color: #29bde0;
+}
+header {
+    position: fixed;
+    top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 2;
+    background-color: #29bde0;
+    border-bottom: 1px solid #74d4eb;
+}
+.header-title {
+    font-size: 1.7rem;
+    color: #fff;
+    text-align: center;
+}
+.first-img {
+    text-align: left;
+}
+.second-img {
+    text-align: right;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: rgba(153,223,240,0.8);
+    text-align: center;
+}
+.first-button > button,
+.second-button > button{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 0;
+    font-size: 1.6rem;
+    color: #fff;
+    outline: none;
+    background-color: #f66f6f;
+}
+.second-button > button {
+    background-color: #fbb435;
+}
+main {
+    padding-top: 4.5rem;
+}
+
+.third-img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.info-1 > div {
+    font-size: 1.6rem;
+    color: #ffc865;
+}
+.info-2 {
+    font-size: 1.2rem;
+    color: #fff;
+}
+.first-round {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-top: 1px solid #dddddd;
+    background-color: #fff;
+}
+.round-day {
+    font-size: 1.4rem;
+    color: #515151;
+}
+.round-times {
+    font-size: 1rem;
+    color: #e4e4e4;
+}
+.round-result {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: #a6a6a6;
+}

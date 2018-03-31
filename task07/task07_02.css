@@ -1,0 +1,112 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #29bde0;
+}
+/*布局header*/
+.override-box {
+    position: fixed;
+    top: 0;
+}
+.first-line {
+    padding-top: 2rem;
+    padding-bottom: 0.8rem;
+}
+.first-line > div:nth-child(2) {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.second-line {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #b9e9f5;
+}
+.second-line > div:first-child {
+    font-size: 1.2rem;
+    color: #464646;
+}
+.third-line > div:last-child {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.icon {
+    background: url("images/css_sprites.png") no-repeat;
+}
+.img-01 {
+    width: 20px;
+    height: 20px;
+    background-position: -56px -10px;
+}
+.img-02 {
+    float: right;
+    width: 18px;
+    height: 18px;
+    background-position: -10px -56px;
+}
+.img-03 {
+    float: right;
+    position: relative;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    background-position: -10px -10px;
+}
+.img-04 {
+    width: 8px;
+    height: 7px;
+    background-position: -10px -94px;
+}
+/*布局footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem 2rem 1rem;
+    background-color: #29bde0;
+}
+footer > div {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #fbb435;
+}
+/*布局main*/
+main {
+    padding-top: 13.3rem;
+    align-items: center;
+}
+.little-square {
+    flex-direction: column;
+    align-items: center;
+}
+.little-square > div:last-child {
+    visibility: hidden;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.little-square:hover > div {
+    visibility: visible;
+}
+.square-content {
+    text-align: center;
+    border: 2px solid #fff;
+}
+.square-content > div:first-child {
+    padding: 1.3rem 1.8rem;
+    color: #56565656;
+    font-size: 1.6rem;
+    background-color: #f5c97b;
+}
+.square-content > div:last-child {
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #83b09a;
+}
