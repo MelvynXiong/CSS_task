@@ -8,6 +8,8 @@ body {
 .override-box {
     position: fixed;
     top: 0;
+    z-index: 2;
+    background-color: #29bde0;
 }
 .first-line {
     padding-top: 2rem;
@@ -96,11 +98,14 @@ main {
     visibility: visible;
 }
 .square-content {
+    width: 20vw;
+    height: 20vw;
     text-align: center;
     border: 2px solid #fff;
 }
 .square-content > div:first-child {
-    padding: 1.3rem 1.8rem;
+    padding-top: calc(50% - 2.1rem);
+    padding-bottom: calc(50% - 2.1rem);
     color: #56565656;
     font-size: 1.6rem;
     background-color: #f5c97b;
