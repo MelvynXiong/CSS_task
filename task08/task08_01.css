@@ -1,0 +1,31 @@
+main {
+    background: #fafafa;
+}
+.info {
+    font-size: 1.6rem;
+}
+.info-content {
+    font-size: 1.6rem;
+    color: #999999;
+}
+.info-number {
+    font-size: 1.6rem;
+    color: #42ae82;
+}
+.img-archive {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+.img-shape {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+.digit-circle {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #e6e6e6;
+}
+.friend-link {
+    list-style-position: inside;
+}

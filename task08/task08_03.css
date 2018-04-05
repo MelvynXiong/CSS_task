@@ -1,0 +1,20 @@
+main {
+    font-size: 1.6rem;
+    background-color: #fafafa;
+}
+.career-title {
+    color: #91d5b9;
+}
+.career-direction {
+    color: #a6a6a6;
+}
+.career-all {
+    background-color: #29b078;
+    color: #fff;
+}
+.human {
+    float: left;
+}
+.human-info {
+    overflow: hidden;
+}

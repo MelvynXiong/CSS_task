@@ -1,0 +1,40 @@
+html {
+    font-size: 62.5%;
+    font-family: Adobe Heiti Std;
+}
+.nav {
+    font-size: 1.6rem;
+    color: #fff;
+    background: #26a26f;
+}
+.drop-down-box {
+    position: absolute;
+    right: 2rem;
+    width: 4.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 0.3rem;
+    background: #289063;
+}
+.drop-down-box > div {
+    height: 0.3rem;
+    background: #1d6445;
+}
+.drop-down-box:hover {
+    background: #b2b2b2;
+}
+.drop-down-content {
+    display: none;
+}
+.footer {
+    font-size: 1.6rem;
+    color: #fff;
+    background: #26a26f;
+}
+.copyright {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border-top: 1px solid #32c086;
+}ß

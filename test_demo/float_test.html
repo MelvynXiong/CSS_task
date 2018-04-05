@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>浮动与hasLayout研究 文字围绕</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-size:12px;
+        }
+        .box{
+            width:300px;
+            overflow:auto;
+        }
+        .leftbox{
+            background:#CCC;
+            width:100px;
+            height:30px;
+            float:left;
+            *margin-right:-3px; /*针对IE6 浮动元素水平右外边距移动-3px 即可解决*/
+        }
+        .textbox{
+            width:200px;
+            background:#FFCCCC;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+<div class="box">
+    <div class="leftbox">浮动元素</div><p class="textbox">文本文本文本文本文本文本文本文本文本文本文本文本文文本文本文本文本文本文本文本文本文本文本文本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</p>
+</div>
+<div>
+    <span style="float: left;">Float Box</span>
+    <p style="display: inline-block;">Atomic Inline-level Box Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quas quisquam beatae illo, sit aliquid. Debitis architecto distinctio perspiciatis commodi!</p>
+</div>
+</body>
+</html>
