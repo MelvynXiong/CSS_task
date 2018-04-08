@@ -1,0 +1,72 @@
+html {
+    font-size: 16px;
+}
+label {
+    margin: 0;
+}
+.big-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.small-title {
+    font-size: 0.6rem;
+}
+.nav-2 {
+    background-color: #f9f9f9;
+}
+footer {
+    color: #999999;
+}
+.select-in {
+    color: #ff7f02;
+}
+.select-out {
+    color: #ccc;
+}
+.process-line {
+    position: relative;
+    width: 100%;
+    height: 0.25rem;
+    background-color: #ccc;
+}
+.process-line-select {
+    background-color: #ff7f02;
+}
+.circle {
+    position: absolute;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    color: #fff;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.circle-in {
+    background-color: #ff7f02;
+}
+.form-title::first-letter {
+    border-left: 4px solid #1d7ad9;
+}
+.title-area {
+    color: #1d7ad9;
+    background-color: #f3f3f3;
+}
+.drop-icon {
+    position: relative;
+    left: -2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.drop-text {
+    width: 6rem;
+}
+.box-background {
+    background-color: #fbfcff;
+}
+.input-box {
+    padding-top: 0.8125rem;
+    padding-bottom: 0.8125rem;
+}
+.input-text-width {
+    width: 2rem;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="task10.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row text-white bg-primary align-items-center">
+            <div class="col-6 col-lg-6 offset-lg-1">客服电话:400-810-5151</div>
+            <div class="col-6 col-lg-4">
+                <div class="row justify-content-end">
+                    <button type="button" class="btn btn-primary">登陆</button>
+                    <button type="button" class="btn btn-primary">注册</button>
+                </div>
+            </div>
+        </div>
+        <div class="row nav-2 align-items-center">
+            <div class="col-12 col-md-4 col-lg-4 offset-lg-1 py-3">
+                <div class="d-flex flex-column text-primary">
+                    <div class="big-title">51包装</div>
+                    <div class="small-title">www.51baozhuang.com</div>
+                </div>
+            </div>
+            <div class="col col-md-8 col-lg-6">
+                <div class="row flex-column flex-md-row justify-content-end">
+                    <button type="button" class="btn btn-default m-2 border-right border-bottom">首页</button>
+                    <button type="button" class="btn btn-primary m-2">在线定制</button>
+                    <button type="button" class="btn btn-default m-2 dropdown-toggle border-right border-bottom">标准箱</button>
+                    <button type="button" class="btn btn-default m-2 border-right border-bottom">关于我们</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="row no-gutters text-center justify-content-center my-3 select-out">
+            <div class="col-12 col-md-2 offset-md-4 offset-lg-3 select-in">
+                <div class="d-flex justify-content-center align-items-center my-3 process-line process-line-select"><span class="circle circle-in">1</span></div>
+                <span>1.定制纸箱</span>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="d-flex justify-content-center align-items-center my-3 process-line"><span class="circle">2</span></div>
+                <span>2.选择数量</span>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="d-flex justify-content-center align-items-center my-3 process-line"><span class="circle">3</span></div>
+                <span>3.上传文件</span>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="d-flex justify-content-center align-items-center my-3 process-line"><span class="circle">4</span></div>
+                <span>4.确认下单</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 offset-md-1 form-title">请您按照以下步骤来定制您的纸箱</div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-12 col-md-10 offset-md-1 py-2 border title-area">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/box.png">
+                        <span>选择箱型</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-10 offset-md-1 border-left border-right box-background">
+                <div class="row align-items-center">
+                    <label class="col-12 col-md-3 py-3"><input type="radio" name="box"><span class="ml-2">对口箱</span></label>
+                    <label class="col-12 col-md-3 py-3"><input type="radio" name="box"><span class="ml-2">飞机盒</span></label>
+                    <label class="col-12 col-md-3 py-3"><input type="radio" name="box"><span class="ml-2">天地盖</span></label>
+                    <div class="col-12 col-md-3 text-md-right input-box">
+                        <input class="drop-text" type="text" placeholder="查看详情">
+                        <div class="drop-icon d-inline-flex justify-content-center align-items-center bg-primary">
+                            <span class="text-white dropdown-toggle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-10 offset-md-1 py-2 border title-area">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/Ruler.png">
+                        <span>确定尺寸</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-10 offset-md-1 border-left border-right box-background">
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <div class="row">
+                            <label class="col-12 col-lg-3 py-3 box-background">
+                                <input type="radio" name="diameter">
+                                <span class="ml-2">内径</span>
+                            </label>
+                            <label class="col-12 col-sm-4 col-lg-3 py-3 box-background">
+                                长&nbsp;<input class="input-text-width" type="text">&nbsp;mm
+                            </label>
+                            <label class="col-12 col-sm-4 col-lg-3 py-3 box-background">
+                                宽&nbsp;<input class="input-text-width" type="text">&nbsp;mm
+                            </label>
+                            <label class="col-12 col-sm-4 col-lg-3 py-3 box-background">
+                                高&nbsp;<input class="input-text-width" type="text">&nbsp;mm
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="col-12 col-lg-3 py-3 box-background">
+                                <input type="radio" name="diameter">
+                                <span class="ml-2">外径</span>
+                            </label>
+                            <label class="col-12 col-sm-4 col-lg-3 py-3 box-background">
+                                长&nbsp;<input class="input-text-width" type="text">&nbsp;mm
+                            </label>
+                            <label class="col-12 col-sm-4 col-lg-3 py-3 box-background">
+                                宽&nbsp;<input class="input-text-width" type="text">&nbsp;mm
+                            </label>
+                            <label class="col-12 col-sm-4 col-lg-3 py-3 box-background">
+                                高&nbsp;<input class="input-text-width" type="text">&nbsp;mm
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-5 text-md-right align-self-center input-box">
+                        <input class="drop-text" type="text" placeholder="查看详情">
+                        <div class="drop-icon d-inline-flex justify-content-center align-items-center bg-primary">
+                            <span class="text-white dropdown-toggle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-10 offset-md-1 py-2 border title-area">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/Cut%20_%20Scissors.png">
+                        <span>选择材质</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-10 offset-md-1 border-left border-right box-background">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-7">
+                        <div class="row">
+                            <label class="col-12 col-md-3 py-3"><input type="radio" name="box"><span class="ml-2">A瓦优质</span></label>
+                            <label class="col-12 col-md-3 py-3"><input type="radio" name="box"><span class="ml-2">B瓦优质</span></label>
+                            <label class="col-12 col-md-3 py-3"><input type="radio" name="box"><span class="ml-2">E瓦优质</span></label>
+                            <label class="col-12 col-md-3 py-3"><input type="radio" name="box"><span class="ml-2">AB瓦优质</span></label>
+                            <label class="col-12 col-md-3 py-3"><input type="radio" name="box"><span class="ml-2">BE瓦优质</span></label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 text-md-right input-box">
+                        <input class="drop-text" type="text" placeholder="查看详情">
+                        <div class="drop-icon d-inline-flex justify-content-center align-items-center bg-primary">
+                            <span class="text-white dropdown-toggle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-10 offset-md-1 border py-4">
+                <div class="row justify-content-center">
+                    <button class="btn btn-danger btn-lg">下一步</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid select-out">
+        <div class="row nav-2 align-items-center py-3 ">
+            <div class="col-12 col-md-3 col-lg-2 offset-lg-1 py-1">
+                <div class="row">
+                    <span class="col">51包装纸-纸箱包装首选服务平台</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3">
+                <div class="row">
+                    <div class="col-12 py-1">
+                        <span><a href="#">关于我们</a></span>
+                        <span class="mx-2">配送流程</span>
+                        <span>联系我们</span>
+                    </div>
+                    <div class="col-12 py-1">
+                        <span>下单指南</span>
+                        <span class="mx-2">媒体介绍</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 py-1">
+                <div class="row text-md-right">
+                    <span class="col-12 py-1">TEL:&nbsp;400-810-9151</span>
+                    <span class="col-12 py-1">企业QQ: 123456789</span>
+                    <span class="col-12 py-1">微信号:XXXXXXXXX</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2 text-md-right">
+                <img src="images/qrcode_task10.png">
+            </div>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
