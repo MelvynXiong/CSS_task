@@ -59,6 +59,9 @@ footer {
 }
 .drop-text {
     width: 6rem;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
 }
 .box-background {
     background-color: #fbfcff;
@@ -69,4 +72,17 @@ footer {
 }
 .input-text-width {
     width: 2rem;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + span {
+    border: 7px solid #f00;
+}
+.radio-circle {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid #f00;
 }
