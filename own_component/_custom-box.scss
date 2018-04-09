@@ -1,0 +1,24 @@
+//the common part of fixed header and footer
+@mixin fix {
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+}
+@mixin header-fix {
+  @include fix;
+  top: 0;
+}
+@mixin footer-fix {
+  @include fix;
+  bottom: 0;
+}
+//custom-function-box
+@mixin square-box($length) {
+  width: $length;
+  height: $length;
+}
+@mixin center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,168 @@
+@import "custom-box";
+@import "elements";
+@import "utility";
+html {
+  font-size: $initial-font;
+}
+main {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+body {
+  margin: 0;
+}
+header {
+  @include header-fix;
+  height: 10rem;
+  border-bottom: $border-gray;
+  > div {
+    height: 5rem;
+    text-align: center;
+    background-color: #5fc0cd;
+    button {
+      @include font-normal-white;
+      @include button-short;
+      margin-top: 0.6rem;
+      background: #55a8b3;
+      + button {
+        margin-left: -1rem;
+        color: #5fc0cd;
+        background: #fff;
+      }
+    }
+    > span {
+      position: absolute;
+      top: 1.5rem;
+      right: 1rem;
+    }
+  }
+  > nav {
+    display: flex;
+    height: 5rem;
+    @include font-normal-light;
+    background: #fff;
+    > div {
+      border-right: $border-gray;
+      text-align: center;
+      flex: 1 0 0;
+      > span {
+        display: inline-block;
+        @include m-y(1.4rem);
+        &:nth-child(2) {
+          float: right;
+          position: relative;
+          top: .9rem;
+          right: 1rem;
+        }
+      }
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+  }
+}
+.dropdown-content {
+  display: none;
+  opacity: 0.8;
+  background-color: #f8fafb;
+  > p {
+    @include m-y(0);
+    @include p-y(0.5rem);
+    &:hover {
+      opacity: 1;
+      background: #999;
+    }
+  }
+}
+footer {
+  @include footer-fix;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f8fafb;
+  button {
+    @include button-none;
+  }
+}
+.middle {
+  @include square-box(4.5rem);
+  @include center-box;
+  border-radius: 50%;
+  background-color: #5fc0cd;
+}
+.single-item {
+  display: flex;
+  @include font-normal-light;
+  justify-content: space-between;
+  border-bottom: $border-gray;
+  > ul {
+    @include list-none;
+    margin-left: 1rem;
+    > li {
+      @include m-y(1rem);
+      > span {
+        margin-right: 1rem;
+      }
+      &:nth-child(2) {
+        padding-left: 2rem;
+        color: #000;
+      }
+    }
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    > span {
+      color: #e63b0e;
+      margin-right: 1rem;
+    }
+  }
+}
+
+/* for CSS sprite*/
+.icon {
+  background: url("images/css_sprites.png") no-repeat;
+}
+.image-box {
+  display: inline-block;
+}
+.bg-task06-01 {
+  width: 1.9rem;
+  height: 2rem;
+  background-position: 0 0;
+}
+.bg-task06-02 {
+  width: 2rem;
+  height: 1.8rem;
+  background-position: -19px 0;
+}
+.bg-task06-03 {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-position: -19px -20px;
+}
+.bg-task06-04 {
+  width: 1.9rem;
+  height: 1.8rem;
+  background-position: 0 -20px;
+}
+.bg-task06-05 {
+  width: 1.1rem;
+  height: 1.1rem;
+  background-position: -39px 0;
+}
+.bg-task06-06 {
+  width: 0.8rem;
+  height: 1rem;
+  background-position: -39px -26px;
+}
+.bg-task06-07 {
+  width: 0.8rem;
+  height: 1.5rem;
+  background-position: -39px -11px;
+}
+.bg-task06-08 {
+  width: 0.6rem;
+  height: 0.4rem;
+  background-position: 0 -38px;
+}

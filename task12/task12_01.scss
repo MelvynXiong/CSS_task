@@ -1,0 +1,101 @@
+@import "custom-box";
+@import "elements";
+@import "utility";
+$border: 1px solid;
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+}
+header {
+  @include header-fix;
+  background-color: #5fc0cd;
+  text-align: center;
+  button {
+    @include button-none;
+    @include font-normal-white;
+    margin-top: 1.6rem;
+    &:first-child {
+      position: absolute;
+      left: 2rem;
+    }
+  }
+}
+footer {
+  @include footer-fix;
+  button {
+    @include font-normal-white;
+    @include button-none;
+    @include p-y(1.2rem);
+    width: 47%;
+    margin-left: 2%;
+    border-radius: 0.5rem;
+    border: $border #5fc0cd;
+    &:first-child {
+      color: #5fc0cd;
+      background-color: #fff;
+    }
+    &:last-child {
+      background-color: #5fc0cd;
+    }
+  }
+}
+main {
+  padding-top: 5rem;
+}
+.banner {
+  background: url("images/task12_04.png") no-repeat;
+  background-size: cover;
+  @include p-y(3.5rem);
+  > img {
+    @include m-x(2rem);
+    vertical-align: middle;
+  }
+  div {
+    @include font-normal-white;
+    display: inline-block;
+    position: relative;
+    top: 2rem;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+@mixin title-info {
+  @include font-normal-black;
+  @include p-y(2rem);
+  border-bottom: $border #999;
+}
+.title {
+  @include title-info;
+  @include p-x(2rem);
+  span {
+    padding-left: 1rem;
+    border-left: 3px solid #999;
+  }
+}
+.info {
+  @include title-info;
+  > span {
+    float: left;
+    @include p-x(2rem);
+    color: #999;
+  }
+  > div {
+    overflow: hidden;
+    padding-left: 2rem;
+    border-left: $border #999;
+  }
+  > img {
+    margin-left: 2rem;
+    vertical-align: middle;
+  }
+}
+.main-info {
+  @include p-x(1rem);
+}
+#price {
+  color: #e26163;
+}

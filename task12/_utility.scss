@@ -1,0 +1,44 @@
+//This part is for spacing part
+@mixin p-y ($value){
+  padding-top: $value;
+  padding-bottom: $value;
+}
+@mixin p-x ($value){
+  padding-left: $value;
+  padding-right: $value;
+}
+@mixin m-y ($value){
+  margin-top: $value;
+  margin-bottom: $value;
+}
+@mixin m-x ($value){
+  margin-left: $value;
+  margin-right: $value;
+}
+
+
+//This part is for border
+$border-default: 1px solid #000;
+$border-gray: 1px solid #999;
+
+
+//This part is for font
+//font-size is 16px and color is white
+$initial-font: 62.5%;
+@mixin font-normal-white {
+  font-size: 1.6rem;
+  color: #fff;
+}
+//only change the color of font
+@mixin font-normal-gray {
+  font-size: 1.6rem;
+  color: #5fc0cd;
+}
+@mixin font-normal-light {
+  font-size: 1.6rem;
+  color: #999;
+}
+@mixin font-normal-black {
+  font-size: 1.6rem;
+  color: #000;
+}
