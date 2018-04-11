@@ -1,0 +1,35 @@
+@import "my_CSS/custom-box";
+@import "my_CSS/font";
+@import "my_CSS/border";
+@import "my_CSS/spacing";
+@import "my_CSS/background";
+@import "my_CSS/button";
+@import "my_CSS/normalize";
+@import "my_CSS/sizing";
+header {
+  border-bottom: $border-74;
+}
+footer {
+  background-color: rgba(153,223,240,0.8);
+}
+main {
+  padding-top: 5rem;
+}
+.result {
+  @include y-center-box;
+  flex-direction: column;
+  > p {
+    @media screen and (min-width: 576px) {
+        width: 50%;
+    }
+    @media screen and (min-width: 1200px){
+        width: 30%;
+    }
+  }
+}
+.result-info {
+  @include y-center-box;
+  flex-direction: column;
+  border-top: $border-dd;
+}
+

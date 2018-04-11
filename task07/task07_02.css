@@ -106,7 +106,7 @@ main {
 .square-content > div:first-child {
     padding-top: calc(50% - 2.1rem);
     padding-bottom: calc(50% - 2.1rem);
-    color: #56565656;
+    color: #565656;
     font-size: 1.6rem;
     background-color: #f5c97b;
 }

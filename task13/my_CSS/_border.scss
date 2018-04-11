@@ -1,0 +1,13 @@
+//This part is for border
+$border-default: 1px solid #000;
+$border-99: 1px solid #999;
+$border-74: 1px solid #74d4eb;
+$border-c9: 1px solid #c9c9c9;
+$border-dd: 1px solid #ddd;
+$border-fb: 1px solid #fbb435;
+.border-c9 {
+  border: $border-c9;
+}
+.border-fb {
+  border: $border-fb;
+}

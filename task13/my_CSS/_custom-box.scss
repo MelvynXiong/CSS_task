@@ -1,0 +1,67 @@
+//the common part of fixed header and footer
+@mixin fix($height){
+  position: fixed;
+  width: 100%;
+  height: $height;
+}
+@mixin y-center-box {
+  display: flex;
+  align-items: center;
+}
+@mixin square-box($length) {
+  width: $length;
+  height: $length;
+}
+@mixin circle($diameter) {
+  display: inline-block;
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+}
+//fixed header and footer
+.own-fh-5 {
+  @include fix(5rem);
+  top: 0;
+}
+.own-fh-15 {
+  @include fix(15rem);
+  top: 0;
+}
+.own-ff-5 {
+  @include fix(5rem);
+  bottom: 0;
+}
+.own-ff-10 {
+  @include fix(10rem);
+  bottom: 0;
+}
+.center-box {
+  @include y-center-box;
+  justify-content: center;
+}
+//phone nav box
+.pnav-box-b {
+  @include y-center-box;
+  justify-content: space-between;
+}
+.pnav-box-a {
+  @include y-center-box;
+  justify-content: space-around;
+}
+
+//little burger image, the burger is container
+//burger should include 3 burger items
+.burger {
+  display: flex;
+  flex-direction: column;
+  @include square-box(2rem);
+  justify-content: space-around;
+}
+.burger-item {
+  background: #fff;
+  height: 0.2rem;
+}
+//little ball
+.ball-1 {
+  @include circle(1rem);
+}

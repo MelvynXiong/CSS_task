@@ -1,0 +1,47 @@
+//This part is for spacing part
+@mixin p-y ($value){
+  padding-top: $value;
+  padding-bottom: $value;
+}
+@mixin p-x ($value){
+  padding-left: $value;
+  padding-right: $value;
+}
+@mixin m-y ($value){
+  margin-top: $value;
+  margin-bottom: $value;
+}
+@mixin m-x ($value){
+  margin-left: $value;
+  margin-right: $value;
+}
+.own-px-3 {
+  @include p-x(3rem);
+}
+.own-py-1 {
+  @include p-y(1rem);
+}
+.own-py-2 {
+  @include p-y(2rem);
+}
+.own-mx-1 {
+  @include m-x(1rem);
+}
+.own-mx-06 {
+  @include m-x(0.6rem);
+}
+.own-mx-2 {
+  @include m-x(2rem);
+}
+.own-mx-3 {
+  @include m-x(3rem);
+}
+.own-my-025 {
+  @include m-y(0.25rem);
+}
+.own-my-1 {
+  @include m-y(1rem);
+}
+.own-my-2 {
+  @include m-y(2rem);
+}

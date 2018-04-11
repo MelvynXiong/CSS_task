@@ -1,0 +1,57 @@
+@import "my_CSS/custom-box";
+@import "my_CSS/font";
+@import "my_CSS/border";
+@import "my_CSS/spacing";
+@import "my_CSS/background";
+@import "my_CSS/button";
+@import "my_CSS/normalize";
+@import "my_CSS/sizing";
+
+header {
+  > div {
+    height: 5rem;
+  }
+}
+main {
+  padding-top: 15rem;
+}
+.id-info {
+  @include y-center-box;
+  flex-direction: column;
+  > div {
+    box-sizing: border-box;
+    @include square-box(20vw);
+    border: 2px solid #fff;
+  }
+  > img {
+    visibility: hidden;
+  }
+  &:hover {
+    > img {
+      visibility: visible;
+    }
+  }
+}
+//for css sprites
+.icon {
+  background: url("images/css_sprites.png") no-repeat;
+}
+.img-01 {
+  @include square-box(2rem);
+  background-position: -56px -10px;
+}
+.img-02 {
+  @include square-box(1.8rem);
+  width: 18px;
+  height: 18px;
+  background-position: -10px -56px;
+}
+.img-03 {
+  @include square-box(2.6rem);
+  background-position: -10px -10px;
+}
+.img-04 {
+  width: 8px;
+  height: 7px;
+  background-position: -10px -94px;
+}
