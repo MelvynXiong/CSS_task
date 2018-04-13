@@ -1,0 +1,78 @@
+//This part is for font
+//font-size is 16px and color is white
+@mixin font($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+@mixin font-n ($color) {
+  font-size: 1.6rem;
+  color: $color;
+}
+@mixin font-sm ($color) {
+  font-size: 1.2rem;
+  color: $color;
+}
+@mixin font-md ($color) {
+  font-size: 1.4rem;
+  color: $color;
+}
+@mixin font-l ($color) {
+  font-size: 2rem;
+  color: $color;
+}
+//default font 1rem
+.font-dw {
+  @include font(1rem, #fff);
+}
+//sm font white
+.font-smw {
+  @include font-sm(#fff);
+}
+//md font
+.font-mda6 {
+  @include font-md(#a6a6a6)
+}
+//lg font
+.font-l51 {
+  @include font-l(#515151);
+}
+//62.5% normal font
+.font-nw {
+  @include font-n(#fff);
+}
+.font-nb {
+  @include font-n(#000);
+}
+.font-n46 {
+  @include font-n(#464646);
+}
+.font-n51 {
+  @include font-n(#515151);
+}
+.font-n56 {
+  @include font-n(#565656);
+}
+.font-n5f {
+  @include font-n(#5fc0cd);
+}
+.font-n999 {
+  @include font-n(#999);
+}
+.font-n9a {
+  @include font-n(#9a9a9a);
+}
+.font-na6 {
+  @include font-n(#a6a6a6);
+}
+.font-naf {
+  @include font-n(#afafaf);
+}
+.font-ne4 {
+  @include font-n(#e4e4e4);
+}
+.font-nfb {
+  @include font-n(#fbb435);
+}
+.font-nff {
+  @include font-n(#ffc865);
+}

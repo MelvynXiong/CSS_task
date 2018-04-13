@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task14-01.css">
+</head>
+<body>
+    <header>
+        <div class="header-info y-center-b px-105">
+            <span class="font-nb">咨询电话 : 010-59478634</span>
+            <span>
+                <img src="images/header_footer/header-1.png">
+                <img src="images/header_footer/header-02.png">
+                <img src="images/header_footer/header-03.png">
+            </span>
+        </div>
+        <nav class="bg-68 px-105">
+            <div class="nav-content d-flex">
+                <div class="y-center-b">
+                    <img src="images/header_footer/header-4.png">
+                    <span class="burger bg-82 my-1" onclick="change()">
+                <span class="burger-item bg-60"></span>
+                <span class="burger-item bg-60"></span>
+                <span class="burger-item bg-60"></span>
+            </span>
+                </div>
+                <div class="dropdown-content d-flex bg-68 font-nw">
+                    <span class="py-1">职业殿堂</span>
+                    <span class="py-1">线上学习</span>
+                    <span class="py-1">我的学院</span>
+                    <span class="py-1">学习资料</span>
+                    <span class="py-1">线下实战</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    </main>
+    <footer class="bg-68 font-nw">
+        <nav class="px-105 py-2 d-flex">
+            <div class="contact-info">
+                <div class="my-1">
+                    <span>技能树</span>
+                    <span class="v-line mx-1"></span>
+                    <span>IT修真院</span>
+                </div>
+                <div class="my-1">
+                    <a href="http://www.jnshu.com/material/us">关于我们</a>
+                    <span class="v-line mx-1"></span>
+                    <a href="http://www.jnshu.com/material/contact">联系我们</a>
+                    <span class="v-line mx-1"></span>
+                    <a href="http://www.jnshu.com/partner">合作公司</a>
+                </div>
+                <div class="my-1">
+                    <a href="http://www.jnshu.com/material/model">新人必读</a>
+                    <span class="v-line mx-1"></span>
+                    <a href="http://www.jnshu.com/notice/list">学院公告</a>
+                </div>
+            </div>
+            <div class="sub-web">
+                <div class="my-1">
+                    <span>旗下网站</span>
+                </div>
+                <div class="my-1">
+                    <a href="http://www.ptteng.com/">葡萄藤</a>
+                    <a href="#">葡萄藤轻游戏</a>
+                </div>
+                <div class="my-1">
+                    <a href="#">萝卜多</a>
+                    <a href="http://www.caochuanyun.com/">草船云孵化器</a>
+                </div>
+                <div class="my-1">
+                    <a href="#">桌游精灵</a>
+                    <a href="#">精选日报</a>
+                    <a href="#">坑乎</a>
+                </div>
+            </div>
+            <div class="wechat-info">
+                <div class="my-1">微信公众平台</div>
+                <img src="images/header_footer/footer-01.png" alt="qr-code">
+            </div>
+        </nav>
+        <div class="copyright py-025">
+            Copyright © 2015 北京葡萄藤信息技术有限公司 All Rights Reserved | 京ICP备15035574号-1
+        </div>
+    </footer>
+    <script>
+        let isOpen = true;
+        let change = function() {
+            let menu = document.querySelector(".dropdown-content");
+            if(isOpen){
+                menu.style.display = "none";
+                isOpen = false;
+            } else {
+                menu.style.display = "flex";
+                isOpen = true
+            }
+        }
+    </script>
+</body>
+</html>

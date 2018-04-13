@@ -1,0 +1,14 @@
+//This part is for button element
+//change the style of button to none
+@mixin button-none {
+  border: 0;
+  outline: none;
+}
+
+.button-none {
+  @include button-none;
+}
+.button-n {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,27 @@
+@mixin box-width($width){
+  width: $width;
+}
+@mixin box-height($height){
+  height: $height;
+}
+.w-60 {
+  @include box-height(60%);
+}
+.w-70 {
+  @include box-width(70%);
+}
+.w-80 {
+  @include box-width(80%);
+}
+.w-100 {
+  @include box-width(100%);
+}
+.h-20 {
+  @include box-height(20%);
+}
+.h-50 {
+  @include box-height(50%);
+}
+.h-80 {
+  @include box-height(80%);
+}

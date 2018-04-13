@@ -1,0 +1,101 @@
+@import "my_CSS/custom-box";
+@import "my_CSS/font";
+@import "my_CSS/border";
+@import "my_CSS/spacing";
+@import "my_CSS/background";
+@import "my_CSS/button";
+@import "my_CSS/normalize";
+@import "my_CSS/sizing";
+@import "my_CSS/flex";
+@mixin media {
+  @media screen and (min-width: 992px){
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px){
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+body {
+  font-family: Arial, "Times New Roman", "Microsoft Yahei", SimSun,SimHei;
+}
+.header-info {
+  height: 4rem;
+  @include media;
+  img {
+    margin-right: 0.8rem;
+    @media screen and (min-width: 576px){
+      margin-right: 2rem;
+    }
+  }
+}
+
+.burger {
+    @media screen and (min-width:768px ) {
+    display: none;
+  }
+}
+.nav-content {
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @include p-y(1.5rem);
+  }
+  @include media;
+}
+.dropdown-content {
+  flex-direction: column;
+  text-align: center;
+  span:hover {
+    background: #75c18a;;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    span {
+      @include p-y(2rem);
+      &:hover {
+        background: inherit;
+      }
+    }
+  }
+}
+.burger:hover {
+  background: #569064;
+}
+footer {
+  > nav {
+    flex-direction: column;
+    @media screen and (min-width: 768px){
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include media;
+  }
+  a {
+   @include font-md(#fff);
+   text-decoration: none;
+   &:hover {
+     text-decoration: underline;
+   }
+ }
+}
+.v-line {
+  width: 1px;
+  border: $border #fff;
+}
+.sub-web {
+  a {
+    margin-right: 2rem;
+  }
+}
+.copyright {
+  border-top: $border #73bf88;
+  text-align: center;
+  font-size: 1.4rem;
+}
